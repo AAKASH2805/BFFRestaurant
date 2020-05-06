@@ -1,0 +1,491 @@
+html
+{
+	scroll-behavior: smooth;
+}
+*
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+nav
+{
+	width:100%;
+	height: 60px;
+	background-color:black;
+	color: white;
+    position: fixed;
+}
+nav ul
+{
+	list-style: none;
+	text-align: right;
+	color: white
+}
+nav ul li
+{
+	display: inline-block;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	width: 130px;
+	color: white;
+	position: relative;
+}
+nav ul li a
+{
+	color: white;
+
+}
+nav ul li a:hover:before
+{
+	content:' ';
+	border:15px solid red;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	border-color: transparent  transparent red transparent ;
+	transform:rotate(180deg);
+	cursor: pointer;
+}
+nav ul li a:hover:after
+{
+	content:' ';
+	border:15px solid red;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom:0px;
+	border-color:red transparent transparent transparent;
+	transform:rotate(180deg);
+	cursor: pointer;
+
+}
+nav h3
+{
+	height: 60px;
+	line-height: 60px;
+	margin-left: 30px;
+	float: left;
+	font-size: 22px;
+	text-shadow: 1px 1px 5px #000;
+}
+nav h3 span:first-child
+{
+ color: red;border-top:4px solid red;
+}
+nav h3 span:last-child
+{
+  border-bottom:4px solid white;
+}
+.home
+{
+	width: 100%;
+	height: 600px;
+	background-image:url(Bff1.jpg);
+	background-size: 100% auto;
+	padding-top: 60px;
+	background-position: 0px 55px;
+}
+.home span
+{
+  color: orange;
+  text-decoration: underline;
+}
+.home span:hover
+{
+	color:white;
+}
+.home div
+{
+	width: 400px;
+	height: 150px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin:auto;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 5px #000;
+
+
+}
+.home div h1
+{
+	font-size: 35px;
+}
+.home div h2
+{
+	font-size:30px;
+}
+.home div h3
+{
+	font-size: 30px;
+}
+.home div h1
+{
+	color:red;
+}
+.home div h2
+{
+	color:red;
+	letter-spacing: 3px;
+}
+.home div h3
+{
+	color:white;
+}
+.btn a
+{
+	
+  background-color:red;
+  border: 2px solid black;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.btn1 a
+{
+	 background-color:red;
+  border: 2px solid black;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.btn a:hover
+{
+ background-color:blue;
+ color: white;
+}
+.btn1 a:hover
+{
+ background-color:orange; 
+}
+.menu
+{
+	width: 100%;
+	height: 1600px;
+	padding-top: 60px;
+	margin: 10px 50px;
+}
+.menu span,h2
+{
+	color:orange;
+	text-align: center;
+	text-decoration: underline;
+}
+.menu p
+{
+	
+	font-family: sans-serif;
+	color: red;
+}
+.menu .container
+{
+	max-width: 1000px;
+	margin: 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.card
+{
+	position: relative;
+	margin: 20px 0;
+	width: 410px;
+	height: 300px;
+	background:white;
+	transform-style: preserve-3d;
+	transition:1s;
+	box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
+}
+.card:hover
+{
+	z-index: 1000;
+	transform:perspective(2000px) rotate(-10deg);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
+}
+.card .imgBox
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border:1px solid black;
+	box-sizing: border-box;
+	transform-origin: left;
+	z-index: 1;
+	transition:1s;
+
+}
+
+.card .imgBox .img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card:hover .imgBox
+{
+	transform:rotateY(-135deg);
+}
+.card .details
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.card .details h2,p
+{
+	color: red;
+}
+.card .details button
+{
+	background-color: red;
+}
+.card .details a
+{
+	color: white;
+}
+.card .details button:hover
+{
+	background-color: blue;
+}
+.card .details span
+{
+	color:green;
+}
+
+.services
+{
+	width: 100%;
+	height: 550px;
+	margin-top: 60px;
+	margin: 10px 50px;
+}
+.services  h2
+{
+	
+	text-decoration: underline;
+}
+.services .container
+{
+	margin-top: 8%;
+	margin-left: 8%;
+}
+.services .card:hover
+{
+	-webkit-box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+	-maz-box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+	box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+.gallery
+{
+	width: 100%;
+	height: 550px;
+	padding-top: 60px;
+	margin: 10px 50px;
+
+}
+.gallery .container h2
+{
+  text-decoration:underline;
+}
+.container .row img
+{
+	transition:1s;
+	padding: 15px;
+	width: 200px;
+	opacity: 0.5;
+	cursor: zoom-out;
+}
+.container .row img:hover
+{
+	transform:scale(1.3);
+	z-index: 2;
+	box-shadow: 0px 2px 20px black;
+	opacity: 2;
+}
+.book
+{
+	width: 100%;
+	height: 890px;
+	padding-top: 150px;
+	margin: 10px 90px;
+
+}
+.book h2
+{
+	text-align: center;
+	margin-top: 30px;
+	text-decoration: underline;
+}
+.order
+{
+	width: 100%;
+	height: 890px;
+	padding-top: 150px;
+	margin: 10px 90px;
+}
+.order h2
+{
+	text-align: center;
+	margin-top: 30px;
+	text-decoration: underline;
+}
+.team
+{
+	width: 100%;
+	height: 700px;
+	padding-top: 120px;
+	margin: 10px 50px;
+}
+.team .container
+{
+	max-width: 1000px;
+	margin: 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.team .card
+{
+
+	position: relative;
+	margin: 20px 0;
+	width: 410px;
+	height: 400px;
+	background:white;
+	transform-style: preserve-3d;
+	transition:1s;
+	box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
+}
+.team .card:hover
+{
+	z-index: 1000;
+	transform:perspective(2000px) rotate(-10deg);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
+}
+.team .card .imgBox
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border:1px solid black;
+	box-sizing: border-box;
+	transform-origin: left;
+	z-index: 1;
+	transition:1s;
+
+}
+.team .card .imgBox .img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.team .card:hover .imgBox
+{
+	transform:rotateY(-135deg);
+}
+
+.team .card .details
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.team .card .details h2,p
+{
+	color: red;
+}
+.contact
+{
+	width: 100%;
+	height: 600px;
+	padding-top:200px;
+	margin: 10px 50px;
+}
+.contact .container
+{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	max-width: 1200px;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+}
+.contact .container .box
+{
+	background:#2f2f2f;
+	padding: 0 20px;
+	margin: 10px;
+	width: calc(33%-20px);
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.contact .container .fa
+{
+	font-size: 28px;
+	background:#ff6348;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius: 50%;
+	transition:0.5s linear;
+}
+.contact .container .box:hover .fa
+{
+	background:white;
+	color:#ff6348;
+	transform:scale(1.6);
+}
+.contact .container .box .fa
+{
+	cursor: pointer;
+}
+.contact .container .box p
+{
+	margin-top: 20px;
+	font-weight: 300;
+	letter-spacing: 2px;
+   opacity: 0;
+   transition:0.5s linear;
+}
+.contact .container .box:hover p
+{
+	max-height:40px;
+	opacity: 1;
+}
+.contact .container .icon p
+{
+	color: white;
+}
